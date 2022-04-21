@@ -12,3 +12,14 @@ Console.WriteLine("\n--- Quadrado 2 ---\n");
 Console.WriteLine("Lado: " +q2.Lado);
 Console.WriteLine("Area: " +q2.Area);
 Console.WriteLine("Perimetro: " +q2.Perimetro);
+
+Retangulo r1 = new Retangulo(10, 4);
+Retangulo r2 = new Retangulo(20, 8);
+
+Console.WriteLine("\n--- Retangulo 1 ---\n");
+Console.WriteLine("Area: " +r1.Area);
+Console.WriteLine("Perimetro: " +r1.Perimetro);
+
+Console.WriteLine("\n--- Retangulo 2 ---\n");
+Console.WriteLine("Area: "+r2.Area);
+Console.WriteLine("Perimetro: " +r2.Perimetro);
