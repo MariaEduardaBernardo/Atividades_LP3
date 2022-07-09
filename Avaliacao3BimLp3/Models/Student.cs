@@ -9,7 +9,6 @@ class Student
 
     public Student()
     {
-
     }
 
     public Student(string registration, string name, string city, bool former)
@@ -18,5 +17,12 @@ class Student
         Name = name;
         City = city;
         Former = former;
+    }
+
+    public Student(string registration, string name, string city)
+    {
+        Registration = registration;
+        Name = name;
+        City = city;
     }
 }

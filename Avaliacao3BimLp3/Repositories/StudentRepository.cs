@@ -60,9 +60,9 @@ class StudentRepository
         using var connection = new SqliteConnection(_databaseConfig.ConnectionString);
         connection.Open();
 
-        var students = connection.Query<Student>("SELECT * FROM Students");
+        var students = connection.Query<Student>("SELECT * FROM Students").ToList();
 
-        return students.ToList();
+        return students;
     }
 
     //Retorna todos os estudantes formados
@@ -77,7 +77,7 @@ class StudentRepository
     }
 
     //Retorna todos estudantes de uma cidade
-    public IEnumerable<Student> GetAllStudentByCity(string city)
+    public List<Student> GetAllStudentByCity(string city)
     {
         using var connection = new SqliteConnection(_databaseConfig.ConnectionString);
         connection.Open();
